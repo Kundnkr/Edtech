@@ -1,0 +1,59 @@
+.profile {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(149, 34, 34);
+    width: 100%;
+    height: 90vh;
+}
+
+.container-profile {
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+
+.student-pic {
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 25px;
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.student-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgb(247, 244, 244);
+    object-fit: cover;
+}
+
+.student-details {
+    padding: 20px;
+    border: 1px solid rgb(210, 206, 206);
+    border-radius:25px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.student-details .personal-details {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.student-details .professional-details {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+}

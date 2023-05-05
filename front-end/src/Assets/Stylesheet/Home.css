@@ -1,0 +1,16 @@
+.courses{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.courses .course{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    min-height: 40vh;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 25px;
+}

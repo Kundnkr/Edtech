@@ -1,0 +1,65 @@
+.change_password{
+    display: flex;
+    width: 40%;
+    padding: 20px;
+    border-radius: 35px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(182, 181, 181);
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(241, 55, 55, 0.9810049019607843) 0%, rgba(32, 39, 136, 1) 100%);
+}
+.change_password div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.change_password div img{
+    margin:auto;
+    width: 150px;
+     
+}
+
+.change_password div h1{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.change_password form{
+    width: 70%;
+    margin: auto;
+}
+
+.change_password form input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(174, 174, 174);
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.change_password form input:focus{
+    outline: none;
+    border: 2px solid rgb(255, 40, 40);
+}
+
+.change_password form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.change_password form button{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 58, 58);
+    color: white;
+    font-size: 16px;
+}
