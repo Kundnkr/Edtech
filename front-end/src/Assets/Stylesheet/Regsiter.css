@@ -18,7 +18,7 @@
     height: 90vh;
     margin: auto;
     border-radius: 25px;
-    border: 1px solid rgb(168, 166, 166);
+    border: 1px solid rgb(255, 255, 255);
     margin-top: 20px;
     background: linear-gradient(90deg, rgba(210, 238, 255, 0.981) 0%, rgb(33, 47, 240) 100%);
 }
@@ -79,7 +79,7 @@
 
 .disc .aimLogo{
     width: 100px;
-    top: 10px;
+    top: 30px;
     left: 35%;
 }
 
