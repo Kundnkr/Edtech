@@ -5,6 +5,7 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    
 }
 
 .registration-box {
@@ -16,23 +17,82 @@
     width: 80%;
     height: 90vh;
     margin: auto;
-    border-radius: 35px;
+    border-radius: 25px;
     border: 1px solid rgb(168, 166, 166);
     margin-top: 20px;
+    background: linear-gradient(90deg, rgba(210, 238, 255, 0.981) 0%, rgb(33, 47, 240) 100%);
 }
 
 .content {
-    width: 45%;
-    background: rgb(241, 55, 55);
-    background: linear-gradient(90deg, rgba(241, 55, 55, 0.9810049019607843) 0%, rgba(32, 39, 136, 1) 100%);
-    border-radius: 35px;
+    width: 45%; 
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    /* border-radius: 15px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 1px 5px 5px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.disc img{
+    position: absolute;  
 }
 
+.disc .keyboy{
+    z-index: 10;
+    bottom: 20px;
+    left: 10px;
+    /* animation-name: toofoo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
+    
+}
+
+.disc .loginsecurity{
+    width: 150px;
+    z-index: 5;
+    top: 160px;
+    left: 30px;
+    animation-name: toofoo2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+}
+.disc .market{
+    width: 250px;
+    z-index: 8;
+    bottom: 80px;
+    right: 10px;
+    animation-name: toofoo;
+    animation-timing-function: ease-in-out;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+}
+.disc .robot{
+    width: 250px;
+}
+
+.disc .aimLogo{
+    width: 100px;
+    top: 10px;
+    left: 35%;
+}
+
+@keyframes toofoo{
+    0% {transform: translateY(-15px);}
+    50% {transform: translateY(0px);}
+    100% {transform: translateY(-15px);}
+}
+@keyframes toofoo2{
+    0% {transform: translateX(-10px);}
+    50% {transform: translateX(0px);}
+    100% {transform: translateX(-10px);}
+}
 
 #registration-from {
     width: 50%;
@@ -57,6 +117,13 @@
     flex-direction: column;
     justify-content: center;
     width: 90%;
+}
+
+#registration-from .form-item h1{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: 40px;
 }
 
 #registration-from .form-item label{
@@ -92,7 +159,7 @@
     border: none;
     color: white;
     font-size: 1.1rem;
-    background-color: rgb(255, 48, 48);
+    background-color: #E40814;
     letter-spacing:1px;
     transition: 0.5s;
 

@@ -1,20 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AimWhite from '../Images/AimWhite.png'
 
 export default function NavBar() {
     return (
         <div>
             <header className='nav'>
                 <div className="logo">
-                    <Link to="/">Logo</Link>
+                    <img src={AimWhite} alt="" />
                 </div>
                 <div className="items">
                     <Link to="/profilecomplete">Student Data </Link>
                     <Link to="/profilemgmt">Profile</Link>
                     <Link to="/sign-up">Sign Up</Link>
-                    <Link to="/otp-verify">OTP-page</Link>
                     <Link to="/login">Login</Link>
-                    <Link to="/change_password">Change Password</Link>
                 </div>
             </header>
         </div>

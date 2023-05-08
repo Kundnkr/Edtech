@@ -2,10 +2,11 @@ import '../Stylesheet/Login.css';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import loginGIF from '../Images/loginGIF.gif'
 
 export default function Login() {
 
-    
+
     const [user, setuser] = useState({
         email: "",
         password: ""
@@ -30,10 +31,19 @@ export default function Login() {
     return (
         <>
             <div className="login-page">
-                <h1>Login</h1>
+                <div className='side-temp'>
+                    <img src={loginGIF} alt="" />
+                </div>
                 <form onSubmit={submithandler}>
-                    <input type="email" name='email' placeholder='Your Email' onChange={changehandler} />
-                    <input type="password" name='password' placeholder='Password' onChange={changehandler} />
+                    <h1>Login</h1>
+                    <div className="input-box">
+                        <input required type="email" className='email' id='email' name='email' onChange={changehandler} />
+                        <label htmlFor="email" className='emailLablel'>Your Email</label>
+                    </div>
+                    <div className="input-box">
+                        <input required id='password' type="password" className='password' name='password' onChange={changehandler} />
+                        <label htmlFor="password" className='passLablel'>Password</label>
+                    </div>
                     <div className='forget-signup-link'>
                         <Link to="/sign-up">Sign Up</Link>
                         <Link to="/forget_password">Forget Password</Link>
@@ -41,6 +51,7 @@ export default function Login() {
                     <button>Login</button>
                 </form>
             </div>
+
         </>
     )
 }

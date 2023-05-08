@@ -22,6 +22,11 @@ a{
 .nav .logo{
   display: flex;
   justify-content: left;
+  align-items: center;
+}
+
+.nav .logo img{
+  width: 70px;
 }
 .nav .items{
   display: flex;
